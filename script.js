@@ -17,3 +17,17 @@ menuLinks.forEach((link) => link.addEventListener('click', () => setMenu(false))
 document.querySelector('footer form').addEventListener('submit', (event) => {
   event.preventDefault();
 });
+const cookieBanner = document.querySelector('.cookie-banner');
+const cookieButtons = document.querySelectorAll('[data-cookie-choice]');
+const cookieChoice = localStorage.getItem('cookie-choice');
+
+if (cookieBanner && !cookieChoice) {
+  cookieBanner.hidden = false;
+}
+
+cookieButtons.forEach((button) => {
+  button.addEventListener('click', () => {
+    localStorage.setItem('cookie-choice', button.dataset.cookieChoice);
+    cookieBanner.hidden = true;
+  });
+});
