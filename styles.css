@@ -329,41 +329,9 @@ h3 {
   line-height: 1;
 }
 
-.testimonial {
-  display: grid;
-  grid-template-columns: 48px minmax(0, 860px) 48px;
-  justify-content: center;
-  align-items: center;
-  gap: 24px;
-  text-align: center;
-}
-
-.testimonial button {
-  width: 48px;
-  height: 58px;
-  border: 0;
-  background: rgba(91, 146, 191, 0.34);
-  color: var(--white);
-  cursor: pointer;
-  font-size: 2.2rem;
-}
-
-blockquote {
-  margin: 0;
-}
-
-.stars {
-  margin-bottom: 12px;
-  font-size: 1.35rem;
-  letter-spacing: 2px;
-}
-
-blockquote p {
-  margin-bottom: 10px;
-  font-size: clamp(1.15rem, 2vw, 1.7rem);
-  font-style: italic;
-  font-weight: 700;
-  line-height: 1.25;
+.review-spacer {
+  min-height: clamp(180px, 22vw, 300px);
+  padding: 0;
 }
 
 cite {
@@ -476,12 +444,6 @@ form .button {
     height: clamp(280px, 65vw, 450px);
   }
 
-  .testimonial {
-    grid-template-columns: 42px minmax(0, 1fr) 42px;
-    gap: 12px;
-    padding-left: 12px;
-    padding-right: 12px;
-  }
 }
 
 @media (max-width: 560px) {
