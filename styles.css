@@ -67,7 +67,7 @@ img {
 .button {
   border: 2px solid var(--teal);
   border-radius: 999px;
-  box-shadow: 0 8px 0 #00606a;
+  box-shadow: 0 8px 0 #DCCDE8;
   transition: transform 180ms ease, box-shadow 180ms ease, background 180ms ease;
 }
 
