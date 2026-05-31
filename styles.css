@@ -45,7 +45,7 @@ img {
   justify-content: space-between;
   min-height: 86px;
   padding: 20px clamp(20px, 5vw, 64px);
-  background: rgba(242, 249, 248, 0.94);
+  background: rgba(247, 242, 255, 0.94);
   border-bottom: 1px solid var(--line);
   backdrop-filter: blur(14px);
 }
